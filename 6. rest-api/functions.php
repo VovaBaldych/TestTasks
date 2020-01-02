@@ -1,14 +1,14 @@
 <?php
     include 'init_database.php';
 
-    function generateNumber()
+    function generateNumber($pdo)
     {
         $digit = random_int(0, 1000);
         echo '<h1>Ваше число - '.$digit.'</h1>';
         $query = $pdo->exec('INSERT INTO generate(result) VALUES ("'.$digit.'")');          // записуємо згернероване число в БД
     }
 
-    function retrieveNumber()
+    function retrieveNumber($pdo)
     {
         $get_id=end(explode('/', $_SERVER['REQUEST_URI']));                                                           
         if(is_numeric($get_id))                                                             // перевіряємо, чи є це слово числом

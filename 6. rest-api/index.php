@@ -4,10 +4,10 @@
 
     if(strpos($_SERVER['REQUEST_URI'], 'rest-api/generate', 1) === 1)                       // якщо в URL є обов'язковий підрядок 'rest-api/generate'
     {
-        generateNumber();
+        generateNumber($pdo);
     }
     else if(strpos($_SERVER['REQUEST_URI'], 'rest-api/get', 1) === 1)                       // якщо в URL є обов'язковий підрядок 'rest-api/get'
     {
-        retrieveNumber();
+        retrieveNumber($pdo);
     } else {echo 'Sorry, but no!';}
 ?>
