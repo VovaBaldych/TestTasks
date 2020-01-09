@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-        <canvas id='canvas' width="600" height="600"></canvas>
+        <canvas id='canvas' width="640" height="640"></canvas>
         <div id="navigation">
             <h2 id="who">Гра починається!<br>Хід гравця 1</h2>
             <div id="kubiks">
@@ -30,10 +30,18 @@
             <p>Площа території 2:</p>
             <h3 id="square2">0</h3>
 
-            <button id="generate">Кинути кубики</button>
+            <button class="button" id="generate">Кинути кубики</button>
         </div>
     </div>
     
+    <div id="window">
+        <h1>Переможець - гравець 1!</h1>
+        <div id="buttons">
+            <button id="new-game"class="button">Нова гра</button>
+            <button id="close" class="button exit">Вихід</button></div>
+    </div>
+
+
     <script src="jquery-3.4.1.min.js"></script>
     <script src="jcanvas.min.js"></script>
     <script src="main.js"></script>

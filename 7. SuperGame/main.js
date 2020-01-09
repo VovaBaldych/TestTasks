@@ -4,7 +4,7 @@ let kubik1=0, kubik2=0;
 let square1=0, square2=0;
 let steps = 1;
 let currentX1=0, currentY1=0;
-let currentX2=600, currentY2=600;
+let currentX2=640, currentY2=640;
 
 $("button#generate").on('click', function()
 {   
@@ -20,6 +20,12 @@ $("button#generate").on('click', function()
         square1+=kubik1*kubik2;
         $("#square1").text(square1);
         currentX1+=kubik1*40;
+        if((600-currentX1)<kubik1*40)
+        {   
+            currentX1=0;
+            currentY1+=kubik2*40;
+        }
+        
     }
     else
     {
@@ -27,7 +33,22 @@ $("button#generate").on('click', function()
         square2+=kubik1*kubik2;
         $("#square2").text(square2);
         currentX2-=kubik1*40;
+        if(currentX2<kubik1*40)
+        {   
+            currentX2=640;
+            currentY2-=kubik2*40;
+        }
     }
+
+    if (square1>=128){
+        finishGame('Переможець - гравець 1');
+    }
+    else if (square2>=128)
+    {
+        finishGame('Переможець - гравець 2');
+    }
+    
+
     steps++;
 });
 
@@ -44,3 +65,18 @@ function Step(text, fillColor, strokeColor, X, Y)
         height: kubik2 * 40
         });
 }
+
+function finishGame(text)
+{
+    $('#window').css('display','flex');
+    $('#window h2').text(text);
+}
+
+$('#new-game').on('click', function()
+{
+    
+});
+$('#close').on('click',function()
+{
+    window.close();
+});

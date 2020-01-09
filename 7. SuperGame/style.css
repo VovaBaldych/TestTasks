@@ -4,6 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body
+{
+    overflow: hidden;
+    background-color: rgb(92, 92, 92);
+}
 .container
 {   width: 100%;
     padding-top: 100px;
@@ -13,14 +18,14 @@
 #navigation
 {
     width: 300px;
-    height: 600px;
-    background-color: #c2c2c2;
+    height: 640px;
+    background-color: #cccccc;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-#generate
+#generate, .button
 {
     border: none;
     padding: 15px 25px;
@@ -30,7 +35,7 @@
     cursor: pointer;
     transition: 0.4s ease all;
 }
-#generate:hover
+#generate:hover, .button:hover
 {
     transform: scale(1.1);
 }
@@ -43,7 +48,6 @@
 #canvas
 {
     border: 1px solid rgb(156, 156, 156);
-    background-color: rgb(247, 228, 225);
     background: linear-gradient( #bbb, transparent 1px), linear-gradient( 90deg, #bbb, transparent 1px);
     background-size: 40px 40px;
     background-position: 0 0;
@@ -61,4 +65,30 @@
 #who
 {
     text-align: center;
+}
+#window
+{
+    width: 600px;
+    padding: 50px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(48, 48, 48);
+    border-radius: 7px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.9); /* Параметры тени */
+    color: rgb(241, 241, 241);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#buttons
+{
+    margin-top: 30px;
+}
+.exit
+{
+    margin-left: 20px;
+    background-color: rgb(182, 53, 53);
 }
