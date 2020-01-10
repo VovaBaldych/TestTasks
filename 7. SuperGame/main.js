@@ -70,12 +70,15 @@ function finishGame(text)
 {
     $('#window').css('display','flex');
     $('#window h2').text(text);
+
+    $('#new-game').on('click', function()
+    {
+        location.reload();
+        $('#window').css('display','none');
+    });
 }
 
-$('#new-game').on('click', function()
-{
-    
-});
+
 $('#close').on('click',function()
 {
     window.close();
