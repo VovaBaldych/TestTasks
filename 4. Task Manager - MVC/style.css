@@ -1,0 +1,19 @@
+body
+{
+    background-color: rgb(35, 35, 35);
+    font-family: 'Comic Sans MS';
+    color: #ffffff;
+}
+.list-group-item
+{
+    font-size: 26px;
+}
+form
+{
+    background-color: rgb(60, 60, 60);
+    color: #e4e4e4;
+    padding: 30px 40px;
+    border: 1px solid rgb(85, 85, 85);
+    border-radius: 7px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9)
+}
