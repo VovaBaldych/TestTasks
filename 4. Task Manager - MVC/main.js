@@ -5,7 +5,7 @@ $(document).ready(function(){
   
      if($('#task_name').val() == '')
      {
-      $('#message').html('<div class="alert alert-danger">Enter Task Details</div>');
+      $('#message').html('<div class="alert alert-danger">Заповніть всі поля</div>');
       return false;
      }
      else
