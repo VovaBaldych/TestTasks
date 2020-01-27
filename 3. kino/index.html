@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Бронювання місць на кіносеанс</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Бронювання квитків на кіносеанси</h1>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-2">
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="monday" name="week" value="monday">
+                    <label class="custom-control-label" for="monday">Понеділок</label>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="tuesday" name="week" value="tuesday">
+                    <label class="custom-control-label" for="tuesday">Вівторок</label>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="wednesday" name="week" value="wednesday">
+                    <label class="custom-control-label" for="wednesday">Середа</label>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="thursday" name="week" value="thursday">
+                    <label class="custom-control-label" for="thursday">Четвер</label>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="friday" name="week" value="friday">
+                    <label class="custom-control-label" for="friday">П'ятниця</label>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="saturday" name="week" value="saturday">
+                    <label class="custom-control-label" for="saturday">Субота</label>
+                </div>
+            </div>        
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="ten" name="time" value="ten">
+                            <label class="custom-control-label" for="ten">10:00</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="twelve" name="time" value="twelve">
+                            <label class="custom-control-label" for="twelve">12:00</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="fourteen" name="time" value="fourteen">
+                            <label class="custom-control-label" for="fourteen">14:00</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="sixteen" name="time" value="sixteen">
+                            <label class="custom-control-label" for="sixteen">16:00</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="eighteen" name="time" value="eighteen">
+                            <label class="custom-control-label" for="eighteen">18:00</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="twenty" name="time" value="twenty">
+                            <label class="custom-control-label" for="twenty">20:00</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12"></div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary" id='bronik'>Забронювати</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    </body>
+</html>
